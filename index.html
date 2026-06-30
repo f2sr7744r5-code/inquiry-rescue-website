@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Inquiry Rescue — Stop Losing Prospective Dance Families</title>
+  <meta name="description" content="Helping dance studios find and fix the places where parent inquiries get delayed, confused, or forgotten — before families choose another studio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Favicon (inline SVG checkmark) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%2312243A'/><path d='M28 52 L43 67 L72 33' stroke='%23F46D5D' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#" class="nav-logo">
+        <img src="assets/images/logo-long.png" alt="Inquiry Rescue" class="nav-logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#about">About</a>
+        <a href="#sample">Sample Audit</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn btn-nav">Request an Audit</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Menu" onclick="document.body.classList.toggle('menu-open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+      <a href="#how-it-works" onclick="document.body.classList.remove('menu-open')">How It Works</a>
+      <a href="#about" onclick="document.body.classList.remove('menu-open')">About</a>
+      <a href="#sample" onclick="document.body.classList.remove('menu-open')">Sample Audit</a>
+      <a href="#pricing" onclick="document.body.classList.remove('menu-open')">Pricing</a>
+      <a href="#contact" class="btn btn-primary" onclick="document.body.classList.remove('menu-open')">Request an Audit</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">For dance studio owners</p>
+        <h1 class="hero-headline">Stop losing prospective families<br> in the follow-up gap.</h1>
+        <p class="hero-sub">Most studios work hard to get families interested. Then the messy middle happens — a parent fills out a form, a trial class gets mentioned but never booked, a follow-up gets delayed, or a promising lead goes quiet because the front desk is already juggling a hundred tiny fires.</p>
+        <p class="hero-sub"><strong>Studio Inquiry Rescue</strong> reviews the path between <em>"I'm interested"</em> and <em>"We're enrolled"</em> — then gives you practical fixes you can use right away.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary btn-lg">Request an Inquiry Leak Audit</a>
+          <a href="#sample" class="btn btn-outline btn-lg">See a Sample Audit</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg-accent"></div>
+  </header>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="section section-problem" id="problem">
+    <div class="container">
+      <div class="section-header">
+        <h2>The inquiry leaks you can't see are the ones costing you enrollments.</h2>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 3v18M15 9h3M15 12h3M15 15h3"/></svg></div>
+          <h3>Registration portal as front door</h3>
+          <p>New families click "Register" before they know which class to choose — and land in a login screen meant for existing parents.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6m0 0l4 4m-4-4l-4 4M6 17h12"/></svg></div>
+          <h3>Too many paths, no clear first step</h3>
+          <p>Register, enroll, parent portal, contact us, summer camp, programs — a new parent doesn't know which door is for them.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 14l2 2 4-4"/></svg></div>
+          <h3>Forms that collect but don't guide</h3>
+          <p>A parent fills out "I'm interested" but gets no response timeline, no class suggestion, no clear next step. So they wait. Then they forget.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <h3>Delayed or missing follow-up</h3>
+          <p>An inquiry comes in during recital week or summer camp chaos. By the time someone responds, the family already called the studio down the road.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a3 3 0 015 1c0 2-3 2-3 4M12 17h.01"/></svg></div>
+          <h3>Parents have to decode placement alone</h3>
+          <p>Level I, Level II, Pre-Professional, Performance Track — a new parent doesn't know what any of that means for their 6-year-old.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 18a5 5 0 00-10 0M12 13a3 3 0 100-6 3 3 0 000 6zM20 8l-1.5 1.5M4 8l1.5 1.5"/></svg></div>
+          <h3>Interested families go silent</h3>
+          <p>They don't complain. They don't unsubscribe. They just… choose the studio that made the next step easier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section section-how" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">How it works</p>
+        <h2>A second set of eyes on the path new families follow.</h2>
+        <p class="section-desc">The audit is not about shaming your staff, replacing your judgment, or adding another complicated system. It's a focused review of what a new parent actually sees and experiences when they try to go from "interested" to "enrolled."</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>We review your public inquiry path</h3>
+            <p>Homepage → getting started → programs → inquiry form or registration → what the parent sees at every decision point. We look at it like a parent would — not a marketing consultant.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>We identify the leaks</h3>
+            <p>Every place a motivated parent might pause, get confused, hit a dead end, or choose a competitor who made the next step easier. Typically 5–10 specific, actionable issues.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>You get a clear report with fixes you can use immediately</h3>
+            <p>Not a 40-page PDF that lives in a folder called "Later." Prioritized fixes, rewritten copy, follow-up templates, and form improvements your team can start using this week.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT'S INCLUDED ============ -->
+  <section class="section section-included" id="included">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What's included</p>
+        <h2>Everything you need to fix the gaps — nothing you don't.</h2>
+      </div>
+      <div class="included-grid">
+        <div class="included-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F46D5D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <h4>Inquiry path scorecard</h4>
+            <p>A clear snapshot of where your public parent path is strong and where it leaks.</p>
+          </div>
+        </div>
+        <div class="included-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F46D5D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <h4>5–10 specific inquiry leaks</h4>
+            <p>Not vague observations — concrete issues with exactly why they cost you families.</p>
+          </div>
+        </div>
+        <div class="included-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F46D5D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <h4>Priority fixes ranked by impact &amp; ease</h4>
+            <p>So you know what to fix first — and what can wait.</p>
+          </div>
+        </div>
+        <div class="included-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F46D5D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <h4>Parent inquiry reply template</h4>
+            <p>A ready-to-use response so your team answers faster and more consistently.</p>
+          </div>
+        </div>
+        <div class="included-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F46D5D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <h4>Trial class follow-up template</h4>
+            <p>Because the trial isn't the sale — the follow-up after the trial is.</p>
+          </div>
+        </div>
+        <div class="included-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F46D5D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <h4>Stale lead reactivation message</h4>
+            <p>A template to re-engage families who inquired but never enrolled.</p>
+          </div>
+        </div>
+        <div class="included-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F46D5D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <h4>Simple lead tracker template</h4>
+            <p>So inquiries stop falling through the cracks during busy weeks.</p>
+          </div>
+        </div>
+        <div class="included-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F46D5D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <h4>Recommendation for next steps</h4>
+            <p>What to prioritize after the audit — and what ongoing support looks like if you want it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section section-about" id="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-photo">
+          <img src="assets/images/harrison-headshot.jpg" alt="Harrison Knostman" loading="lazy">
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">Who's behind this</p>
+          <h2>Built by someone who grew up inside a dance studio.</h2>
+          <p>Studio Inquiry Rescue is run by <strong>Harrison Knostman</strong> — a dance teacher who grew up inside his mother's dance studio and understands how much invisible work happens behind the scenes.</p>
+          <p>Parent questions. Trial classes. Class placement. Registrations. Schedule confusion. Front-desk overload. The constant feeling that everything needed to be answered yesterday.</p>
+          <p>This audit exists because most dance studios don't have an inquiry problem — they have a <em>follow-through infrastructure</em> problem. And no one on the outside usually tells you where the gaps are.</p>
+          <p class="about-tagline">I'm that second set of eyes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SAMPLE AUDIT ============ -->
+  <section class="section section-sample" id="sample">
+    <div class="container">
+      <div class="sample-layout">
+        <div class="sample-text">
+          <p class="section-eyebrow">Proof of work</p>
+          <h2>See what the audit actually looks like.</h2>
+          <p>This is a real New Parent Path Review based on a public-facing audit of a dance studio's inquiry path. Identifying details have been removed.</p>
+          <p>It's not a testimonial or client case study. It's a sample of the kind of practical issues the audit finds: unclear new-family next steps, registration portals appearing too early, inquiry forms that collect interest but don't fully guide the parent, and small points of confusion that make interested families pause.</p>
+          <div class="sample-preview-items">
+            <div class="sample-preview-item">
+              <span class="sample-label">Leak found:</span> Registration portal appears too early for new families
+            </div>
+            <div class="sample-preview-item">
+              <span class="sample-label">Leak found:</span> Inquiry form collects interest but doesn't guide the parent
+            </div>
+            <div class="sample-preview-item">
+              <span class="sample-label">Leak found:</span> Too many competing calls to action on the homepage
+            </div>
+            <div class="sample-preview-item">
+              <span class="sample-label">Leak found:</span> Program info is useful but the decision path is scattered
+            </div>
+            <div class="sample-preview-item">
+              <span class="sample-label">Leak found:</span> Forms don't collect enough info for a useful first reply
+            </div>
+          </div>
+          <a href="assets/sample-inquiry-leak-audit.pdf" target="_blank" class="btn btn-primary btn-lg">View the Sample Audit (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ URGENCY ============ -->
+  <section class="section section-urgency">
+    <div class="container">
+      <div class="urgency-box">
+        <h2>Fall enrollment is closer than it feels.</h2>
+        <p>Summer is the setup window before families choose activities for the next school year. If a parent is interested and the next step is unclear, delayed, or buried — they won't complain. They'll just choose the studio that made the path easier.</p>
+        <a href="#contact" class="btn btn-primary btn-lg">Fix your inquiry path before fall →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section section-pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Pricing</p>
+        <h2>One focused review. No recurring commitment.</h2>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>Inquiry Leak Audit</h3>
+          <div class="pricing-amount">
+            <span class="pricing-dollar">$</span>
+            <span class="pricing-number">397</span>
+          </div>
+          <p class="pricing-note">Pilot price — one-time</p>
+        </div>
+        <div class="pricing-body">
+          <ul class="pricing-list">
+            <li>Full public inquiry path review</li>
+            <li>5–10 specific inquiry leaks identified</li>
+            <li>Prioritized fix recommendations</li>
+            <li>Parent reply &amp; follow-up templates</li>
+            <li>Stale lead reactivation message</li>
+            <li>Simple lead tracker template</li>
+            <li>Delivered within 5–7 business days</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-lg btn-full">Request Your Audit</a>
+          <p class="pricing-fine">The initial audit reviews public-facing materials only. We do not need private parent or student data. No enrollment results are guaranteed.</p>
+        </div>
+      </div>
+      <div class="pricing-reframe">
+        <p><strong>One enrolled family pays for this three times over.</strong><br>If fixing even one leak converts one extra family this fall, the audit has already paid for itself.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT FORM ============ -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-text">
+          <p class="section-eyebrow">Get started</p>
+          <h2>Request your Inquiry Leak Audit.</h2>
+          <p>Tell us a bit about your studio and we'll be in touch within 1 business day to discuss next steps.</p>
+          <div class="contact-details">
+            <p>Prefer email? Reach us directly at<br><a href="mailto:hello@inquiryrescue.com">hello@inquiryrescue.com</a></p>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form id="contact-form" action="https://formsubmit.co/ajax/hello@inquiryrescue.com" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" required placeholder="e.g. Sarah Johnson">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="e.g. sarah@yourstudio.com">
+            </div>
+            <div class="form-group">
+              <label for="studio">Studio name</label>
+              <input type="text" id="studio" name="studio" required placeholder="e.g. Harmony Dance Academy">
+            </div>
+            <div class="form-group">
+              <label for="website">Studio website</label>
+              <input type="url" id="website" name="website" placeholder="e.g. https://yourstudio.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Anything else you'd like us to know? <span class="optional">(optional)</span></label>
+              <textarea id="message" name="message" rows="3" placeholder="e.g. We've noticed parents asking about classes but not following through..."></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="New Inquiry Leak Audit Request">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
+            <button type="submit" class="btn btn-primary btn-lg btn-full">Send My Audit Request</button>
+            <p class="form-privacy">We'll respond within 1 business day. No spam, no mailing list — just a conversation about your studio.</p>
+          </form>
+          <div id="form-success" class="form-success" style="display: none;">
+            <div class="success-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+            <h3>Request received!</h3>
+            <p>Thanks for reaching out. We'll review your studio and respond within 1 business day with next steps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="section section-newsletter" id="newsletter">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="newsletter-text">
+          <h3>Not ready for an audit yet? Stay in the loop.</h3>
+          <p>Quick, practical tips on fixing inquiry leaks and converting more prospective dance families — delivered to your inbox.</p>
+        </div>
+        <div class="newsletter-form-wrapper">
+          <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="a7f31f78-5896-4359-92b0-1a67528de8e2"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/images/logo-long.png" alt="Inquiry Rescue" class="footer-logo-img">
+        </div>
+        <div class="footer-links">
+          <a href="mailto:hello@inquiryrescue.com">hello@inquiryrescue.com</a>
+        </div>
+        <div class="footer-legal">
+          <p>&copy; 2026 Knostman Studios LLC. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky nav on scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          const offset = 96;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Form submission via Formsubmit.co AJAX
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      try {
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+        const resp = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const result = await resp.json();
+        if (result.success) {
+          form.style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        } else {
+          throw new Error('Form error');
+        }
+      } catch {
+        btn.textContent = 'Send My Audit Request';
+        btn.disabled = false;
+        alert('Something went wrong. Please email hello@inquiryrescue.com directly.');
+      }
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.problem-card, .step, .included-item, .sample-preview-item').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
