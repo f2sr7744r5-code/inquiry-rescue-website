@@ -24,6 +24,7 @@
         <a href="#how-it-works">How It Works</a>
         <a href="#about">About</a>
         <a href="#sample">Sample Audit</a>
+        <a href="#mini-audit">Free Mini-Audit</a>
         <a href="#pricing">Pricing</a>
         <a href="#contact" class="btn btn-nav">Request an Audit</a>
       </div>
@@ -36,6 +37,7 @@
       <a href="#how-it-works" onclick="document.body.classList.remove('menu-open')">How It Works</a>
       <a href="#about" onclick="document.body.classList.remove('menu-open')">About</a>
       <a href="#sample" onclick="document.body.classList.remove('menu-open')">Sample Audit</a>
+      <a href="#mini-audit" onclick="document.body.classList.remove('menu-open')">Free Mini-Audit</a>
       <a href="#pricing" onclick="document.body.classList.remove('menu-open')">Pricing</a>
       <a href="#contact" class="btn btn-primary" onclick="document.body.classList.remove('menu-open')">Request an Audit</a>
     </div>
@@ -252,6 +254,56 @@
     </div>
   </section>
 
+  <!-- ============ FREE MINI-AUDIT ============ -->
+  <section class="section section-mini-audit" id="mini-audit">
+    <div class="container">
+      <div class="mini-audit-layout">
+        <div class="mini-audit-text">
+          <p class="section-eyebrow">Free — no cost, no catch</p>
+          <h2>Get a free mini-audit of your studio's new-parent path.</h2>
+          <p>Not ready for the full audit? Start here. Send us your studio website and we'll personally review the path a brand-new family follows — then email you <strong>2–3 specific things</strong> a prospective parent would run into.</p>
+          <p>No charge. No sales call required. Just a real, human look at where your studio might be quietly losing interested families.</p>
+          <ul class="mini-audit-list">
+            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F46D5D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 2–3 specific observations, personalized to your site</li>
+            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F46D5D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Delivered by email, usually within a few days</li>
+            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F46D5D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> A no-pressure preview of the full Inquiry Leak Audit</li>
+          </ul>
+        </div>
+        <div class="contact-form-wrapper">
+          <form id="mini-audit-form" action="https://formsubmit.co/ajax/hello@inquiryrescue.com" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="ma-name">Your name</label>
+              <input type="text" id="ma-name" name="name" required placeholder="e.g. Sarah Johnson">
+            </div>
+            <div class="form-group">
+              <label for="ma-email">Email</label>
+              <input type="email" id="ma-email" name="email" required placeholder="e.g. sarah@yourstudio.com">
+            </div>
+            <div class="form-group">
+              <label for="ma-studio">Studio name</label>
+              <input type="text" id="ma-studio" name="studio" required placeholder="e.g. Harmony Dance Academy">
+            </div>
+            <div class="form-group">
+              <label for="ma-website">Studio website</label>
+              <input type="url" id="ma-website" name="website" required placeholder="e.g. https://yourstudio.com">
+            </div>
+            <input type="hidden" name="_subject" value="New FREE Mini-Audit Request">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
+            <button type="submit" class="btn btn-primary btn-lg btn-full">Get My Free Mini-Audit</button>
+            <p class="form-privacy">100% free. We'll email your mini-audit in a few days. No spam, no mailing list.</p>
+          </form>
+          <div id="mini-audit-success" class="form-success" style="display: none;">
+            <div class="success-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+            <h3>Request received!</h3>
+            <p>Thanks! We'll review your studio's new-parent path and email your free mini-audit within a few days.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ URGENCY ============ -->
   <section class="section section-urgency">
     <div class="container">
@@ -327,7 +379,7 @@
             </div>
             <div class="form-group">
               <label for="website">Studio website</label>
-              <input type="url" id="website" name="website" placeholder="e.g. https://yourstudio.com">
+              <input type="url" id="website" name="website" required placeholder="e.g. https://yourstudio.com">
             </div>
             <div class="form-group">
               <label for="message">Anything else you'd like us to know? <span class="optional">(optional)</span></label>
@@ -359,7 +411,11 @@
           <p>Quick, practical tips on fixing inquiry leaks and converting more prospective dance families — delivered to your inbox.</p>
         </div>
         <div class="newsletter-form-wrapper">
-          <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="a7f31f78-5896-4359-92b0-1a67528de8e2"></script>
+          <form class="newsletter-form" action="https://embeds.beehiiv.com/a7f31f78-5896-4359-92b0-1a67528de8e2" method="POST" target="_blank">
+            <input type="email" name="email" required placeholder="you@yourstudio.com" aria-label="Email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="newsletter-note">Free. Unsubscribe anytime. No spam, ever.</p>
         </div>
       </div>
     </div>
@@ -402,35 +458,41 @@
       });
     });
 
-    // Form submission via Formsubmit.co AJAX
-    const form = document.getElementById('contact-form');
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
+    // Form submission via Formsubmit.co AJAX (generic — handles both forms)
+    function wireForm(formId, successId) {
+      const form = document.getElementById(formId);
+      if (!form) return;
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        const originalLabel = btn.textContent;
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
 
-      try {
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
-        const resp = await fetch(form.action, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify(data)
-        });
-        const result = await resp.json();
-        if (result.success) {
-          form.style.display = 'none';
-          document.getElementById('form-success').style.display = 'block';
-        } else {
-          throw new Error('Form error');
+        try {
+          const formData = new FormData(form);
+          const data = Object.fromEntries(formData.entries());
+          const resp = await fetch(form.action, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(data)
+          });
+          const result = await resp.json();
+          if (result.success) {
+            form.style.display = 'none';
+            document.getElementById(successId).style.display = 'block';
+          } else {
+            throw new Error('Form error');
+          }
+        } catch {
+          btn.textContent = originalLabel;
+          btn.disabled = false;
+          alert('Something went wrong. Please email hello@inquiryrescue.com directly.');
         }
-      } catch {
-        btn.textContent = 'Send My Audit Request';
-        btn.disabled = false;
-        alert('Something went wrong. Please email hello@inquiryrescue.com directly.');
-      }
-    });
+      });
+    }
+    wireForm('contact-form', 'form-success');
+    wireForm('mini-audit-form', 'mini-audit-success');
 
     // Fade-in on scroll
     const observer = new IntersectionObserver((entries) => {
