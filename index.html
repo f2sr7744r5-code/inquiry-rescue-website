@@ -289,6 +289,23 @@
               <label for="ma-website">Studio website</label>
               <input type="url" id="ma-website" name="website" required placeholder="e.g. https://yourstudio.com">
             </div>
+            <div class="form-group">
+              <label>Do you have someone who manages your website?</label>
+              <div class="form-radio-group">
+                <div class="form-radio-option">
+                  <input type="radio" id="ma-web-help-yes" name="web_help" value="Yes, a dedicated web designer/developer" required>
+                  <label for="ma-web-help-yes">Yes, a dedicated web designer/developer</label>
+                </div>
+                <div class="form-radio-option">
+                  <input type="radio" id="ma-web-help-diy" name="web_help" value="No, I manage it myself">
+                  <label for="ma-web-help-diy">No, I manage it myself</label>
+                </div>
+                <div class="form-radio-option">
+                  <input type="radio" id="ma-web-help-unsure" name="web_help" value="Not sure">
+                  <label for="ma-web-help-unsure">Not sure</label>
+                </div>
+              </div>
+            </div>
             <input type="hidden" name="_subject" value="New FREE Mini-Audit Request">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
@@ -384,7 +401,39 @@
               <input type="url" id="website" name="website" required placeholder="e.g. https://yourstudio.com">
             </div>
             <div class="form-group">
-              <label for="message">Anything else you'd like us to know? <span class="optional">(optional)</span></label>
+              <label>Do you have someone who manages your website?</label>
+              <div class="form-radio-group">
+                <div class="form-radio-option">
+                  <input type="radio" id="web-help-designer" name="web_help" value="Yes, a dedicated web designer/developer" required>
+                  <label for="web-help-designer">Yes, a dedicated web designer/developer</label>
+                </div>
+                <div class="form-radio-option">
+                  <input type="radio" id="web-help-family" name="web_help" value="Yes, a friend or family member helps">
+                  <label for="web-help-family">Yes, a friend or family member helps</label>
+                </div>
+                <div class="form-radio-option">
+                  <input type="radio" id="web-help-diy" name="web_help" value="No, I manage it myself">
+                  <label for="web-help-diy">No, I manage it myself</label>
+                </div>
+                <div class="form-radio-option">
+                  <input type="radio" id="web-help-unsure" name="web_help" value="Not sure">
+                  <label for="web-help-unsure">Not sure</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="platform">What was your site built with, if you know?</label>
+              <select id="platform" name="platform" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="Wix">Wix</option>
+                <option value="Squarespace">Squarespace</option>
+                <option value="DanceStudio-Pro / Jackrabbit (studio software's built-in site)">DanceStudio-Pro / Jackrabbit (studio software's built-in site)</option>
+                <option value="Custom-built">Custom-built</option>
+                <option value="Not sure">Not sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Anything else about your website or your families' enrollment process we should know? <span class="optional">(optional)</span></label>
               <textarea id="message" name="message" rows="3" placeholder="e.g. We've noticed parents asking about classes but not following through..."></textarea>
             </div>
             <input type="hidden" name="_subject" value="New Inquiry Roadblock Audit Request">
