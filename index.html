@@ -535,7 +535,7 @@
     });
 
     // Form submission via Formsubmit.co AJAX (generic — handles both forms)
-    function wireForm(formId, successId) {
+    function wireForm(formId, successId, leadType) {
       const form = document.getElementById(formId);
       if (!form) return;
       form.addEventListener('submit', async (e) => {
@@ -557,6 +557,10 @@
           if (result.success) {
             form.style.display = 'none';
             document.getElementById(successId).style.display = 'block';
+            // Meta Pixel: fire Lead only on confirmed successful submission
+            if (typeof fbq === 'function') {
+              fbq('track', 'Lead', { content_name: leadType });
+            }
           } else {
             throw new Error('Form error');
           }
@@ -567,8 +571,8 @@
         }
       });
     }
-    wireForm('contact-form', 'form-success');
-    wireForm('mini-audit-form', 'mini-audit-success');
+    wireForm('contact-form', 'form-success', 'Audit Request');
+    wireForm('mini-audit-form', 'mini-audit-success', 'Mini-Audit');
 
     // Fade-in on scroll
     const observer = new IntersectionObserver((entries) => {
