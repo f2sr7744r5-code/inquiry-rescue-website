@@ -447,6 +447,78 @@ a:hover { color: var(--coral-hover); }
   color: var(--coral);
 }
 
+/* --- FINDING EXAMPLE CARD --- */
+.finding-example {
+  margin-top: 36px;
+  margin-bottom: 8px;
+}
+.finding-example-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+.finding-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 16px;
+}
+.finding-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.finding-number {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--navy);
+  padding: 4px 12px;
+  border-radius: 6px;
+  letter-spacing: 0.3px;
+}
+.finding-tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 6px;
+  background: var(--coral-light);
+  color: var(--coral-hover);
+}
+.finding-card h4 {
+  font-size: 18px;
+  color: var(--navy);
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.finding-block {
+  margin-bottom: 16px;
+}
+.finding-block:last-child { margin-bottom: 0; }
+.finding-block-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--coral);
+  margin-bottom: 6px;
+}
+.finding-block p:not(.finding-block-label) {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.6;
+}
+.finding-example-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
 /* --- URGENCY --- */
 .section-urgency {
   padding: 80px 0;
