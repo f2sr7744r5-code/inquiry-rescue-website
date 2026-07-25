@@ -30,6 +30,10 @@
 
 html { scroll-behavior: smooth; }
 
+/* DM Serif Display ships at 400 only — without this, browsers synthesize
+   a faux bold on headings that smears/doubles the letterforms */
+h1, h2, .newsletter-text h3 { font-weight: 400; }
+
 body {
   font-family: var(--font-sans);
   font-size: 17px;
