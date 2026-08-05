@@ -330,29 +330,8 @@
               <input type="email" id="ma-email" name="email" required placeholder="e.g. sarah@yourstudio.com">
             </div>
             <div class="form-group">
-              <label for="ma-studio">Studio name</label>
-              <input type="text" id="ma-studio" name="studio" required placeholder="e.g. Harmony Dance Academy">
-            </div>
-            <div class="form-group">
               <label for="ma-website">Studio website</label>
               <input type="text" id="ma-website" name="website" required placeholder="e.g. yourstudio.com" pattern="^(https?:\/\/)?[a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?(\.[a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?)+.*$" title="Enter your website, e.g. yourstudio.com">
-            </div>
-            <div class="form-group">
-              <label>Do you have someone who manages your website?</label>
-              <div class="form-radio-group">
-                <div class="form-radio-option">
-                  <input type="radio" id="ma-web-help-yes" name="web_help" value="Yes, a dedicated web designer/developer" required>
-                  <label for="ma-web-help-yes">Yes, a dedicated web designer/developer</label>
-                </div>
-                <div class="form-radio-option">
-                  <input type="radio" id="ma-web-help-diy" name="web_help" value="No, I manage it myself">
-                  <label for="ma-web-help-diy">No, I manage it myself</label>
-                </div>
-                <div class="form-radio-option">
-                  <input type="radio" id="ma-web-help-unsure" name="web_help" value="Not sure">
-                  <label for="ma-web-help-unsure">Not sure</label>
-                </div>
-              </div>
             </div>
             <input type="hidden" name="_subject" value="New FREE Mini-Audit Request">
             <input type="hidden" name="_captcha" value="false">
@@ -442,18 +421,14 @@
               <input type="email" id="email" name="email" required placeholder="e.g. sarah@yourstudio.com">
             </div>
             <div class="form-group">
-              <label for="studio">Studio name</label>
-              <input type="text" id="studio" name="studio" required placeholder="e.g. Harmony Dance Academy">
-            </div>
-            <div class="form-group">
               <label for="website">Studio website</label>
               <input type="text" id="website" name="website" placeholder="e.g. yourstudio.com" pattern="^(https?:\/\/)?[a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?(\.[a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?)+.*$" title="Enter your website, e.g. yourstudio.com">
             </div>
             <div class="form-group">
-              <label>Do you have someone who manages your website?</label>
+              <label>Do you have someone who manages your website? <span class="optional">(optional)</span></label>
               <div class="form-radio-group">
                 <div class="form-radio-option">
-                  <input type="radio" id="web-help-designer" name="web_help" value="Yes, a dedicated web designer/developer" required>
+                  <input type="radio" id="web-help-designer" name="web_help" value="Yes, a dedicated web designer/developer">
                   <label for="web-help-designer">Yes, a dedicated web designer/developer</label>
                 </div>
                 <div class="form-radio-option">
@@ -469,27 +444,6 @@
                   <label for="web-help-unsure">Not sure</label>
                 </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="platform">What was your site built with, if you know?</label>
-              <select id="platform" name="platform" required>
-                <option value="" disabled selected>Select one</option>
-                <option value="Wix">Wix</option>
-                <option value="Squarespace">Squarespace</option>
-                <option value="DanceStudio-Pro / Jackrabbit (studio software's built-in site)">DanceStudio-Pro / Jackrabbit (studio software's built-in site)</option>
-                <option value="Custom-built">Custom-built</option>
-                <option value="Not sure">Not sure</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="email-platform">What email do you use for your business? <span class="optional">(optional)</span></label>
-              <select id="email-platform" name="email_platform">
-                <option value="" disabled selected>Select one</option>
-                <option value="Gmail / Google Workspace">Gmail / Google Workspace</option>
-                <option value="Outlook / Microsoft 365">Outlook / Microsoft 365</option>
-                <option value="Apple Mail / iCloud">Apple Mail / iCloud</option>
-                <option value="Other / Not sure">Other / Not sure</option>
-              </select>
             </div>
             <div class="form-group">
               <label for="message">Anything else about your website or your families' enrollment process we should know? <span class="optional">(optional)</span></label>
